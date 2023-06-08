@@ -744,8 +744,8 @@ if (EVENT__HAVE_KQUEUE)
             Use EVENT__FORCE_KQUEUE_CHECK to be sure (this requires running a test program on the cross compilation target)")
         set(EVENT__HAVE_WORKING_KQUEUE 1)
     elseif (APPLE AND NOT EVENT__FORCE_KQUEUE_CHECK)
-        message(WARNING "Cannot check if kqueue works with pipes on macOS.
-            Use EVENT__FORCE_KQUEUE_CHECK to be sure (this requires running a test program).")
+        # message(WARNING "Cannot check if kqueue works with pipes on macOS.
+        #     Use EVENT__FORCE_KQUEUE_CHECK to be sure (this requires running a test program).")
         set(EVENT__HAVE_WORKING_KQUEUE 1)
     else()
         message(STATUS "Checking if kqueue works with pipes...")

@@ -171,3 +171,6 @@ rules.ninja
 
 # clangd
 .cache
+# qin's conf
+.vscode/settings.json
+/build
